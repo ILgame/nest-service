@@ -6,7 +6,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:3000', // สำหรับตอนพัฒนา
-      'https://your-production-domain.com', // ใส่โดเมนจริงที่ Deploy Next.js
+      'https://dev-web-nextflix.onrender.com', // ใส่โดเมนจริงที่ Deploy Next.js
     ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
