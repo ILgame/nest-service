@@ -7,6 +7,7 @@ export interface res {
 
 export interface results {
     id: string,
+    original_title: string,
     file_url: string;
     type: string;
     detail: string

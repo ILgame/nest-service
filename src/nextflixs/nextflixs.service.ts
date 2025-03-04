@@ -31,7 +31,8 @@ private apiUrl = 'https://api.themoviedb.org/';
                 page: response.data.page,
                 results: response.data.results.map((movie: any) => ({
                     id: movie.id.toString(),
-                    file_url: `https://image.tmdb.org/t/p/w500${movie.poster_path}`,
+                    original_title: movie.original_title,
+                    file_url: `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`,
                     type: movie.media_type || 'movie',
                     detail: movie.overview
                 })),
@@ -64,7 +65,8 @@ private apiUrl = 'https://api.themoviedb.org/';
                 page: response.data.page,
                 results: response.data.results.map((movie: any) => ({
                     id: movie.id.toString(),
-                    file_url: `https://image.tmdb.org/t/p/w500${movie.poster_path}`,
+                    original_title: movie.original_title,
+                    file_url: `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`,
                     type: movie.media_type,
                     detail: movie.overview
                 })),
@@ -97,7 +99,8 @@ private apiUrl = 'https://api.themoviedb.org/';
                 page: response.data.page,
                 results: response.data.results.map((movie: any) => ({
                     id: movie.id.toString(),
-                    file_url: `https://image.tmdb.org/t/p/w500${movie.poster_path}`,
+                    original_title: movie.original_title,
+                    file_url: `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`,
                     type: movie.media_type || 'movie',
                     detail: movie.overview
                 })),
@@ -134,7 +137,8 @@ private apiUrl = 'https://api.themoviedb.org/';
                 page: response.data.page,
                 results: response.data.results.map((movie: any) => ({
                     id: movie.id.toString(),
-                    file_url: `https://image.tmdb.org/t/p/w500${movie.poster_path}`,
+                    original_title: movie.original_title,
+                    file_url: `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`,
                     type: movie.media_type || 'movie',
                     detail: movie.overview
                 })),
@@ -169,7 +173,8 @@ private apiUrl = 'https://api.themoviedb.org/';
                 page: response.data.page,
                 results: response.data.results.filter((obj: any) => obj.media_type !== 'person').map((movie: any) => ({
                     id: movie.id.toString(),
-                    file_url: `https://image.tmdb.org/t/p/w500${movie.poster_path}`,
+                    original_title: movie.original_title,
+                    file_url: `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`,
                     type: movie.media_type || 'movie',
                     detail: movie.overview
                 })),
